@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    _mealsFuture = ApiService.fetchMeals("Chicken");
+    _mealsFuture = ApiService.fetchMeals("Chicken"); // Memuat data resep dari API
   }
 
   @override
@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
         future: _mealsFuture,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(child: CircularProgressIndicator());
+            return const Center(child: CircularProgressIndicator()); // Tampilkan loading
           } else if (snapshot.hasError) {
             return Center(child: Text('Gagal memuat data: ${snapshot.error}'));
           } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
                 itemCount: meals.length,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 1,
-                  childAspectRatio: 3 / 1.2, // perbaiki rasio card
+                  childAspectRatio: 3 / 1.2,
                   mainAxisSpacing: 12,
                 ),
                 itemBuilder: (context, index) {
@@ -53,6 +53,7 @@ class _HomePageState extends State<HomePage> {
                   return RecipeCard(
                     meal: meal,
                     onTap: () {
+                      // Navigasi ke halaman detail saat kartu ditekan
                       Navigator.push(
                         context,
                         MaterialPageRoute(
