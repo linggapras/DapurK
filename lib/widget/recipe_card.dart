@@ -10,7 +10,7 @@ class RecipeCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap,
+      onTap: onTap, // Menangani aksi saat kartu ditekan
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         elevation: 4,
@@ -20,7 +20,7 @@ class RecipeCard extends StatelessWidget {
             ClipRRect(
               borderRadius: const BorderRadius.horizontal(left: Radius.circular(12)),
               child: Image.network(
-                meal.thumbnail,
+                meal.thumbnail, // Menampilkan gambar dari URL
                 width: 120,
                 height: 100,
                 fit: BoxFit.cover,
@@ -34,7 +34,7 @@ class RecipeCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      meal.name,
+                      meal.name, // Nama resep
                       style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -43,7 +43,7 @@ class RecipeCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 6),
                     Text(
-                      "Tap untuk melihat detail resep",
+                      "Tap untuk melihat detail resep", // Deskripsi pendek
                       style: TextStyle(color: Colors.grey[600]),
                     ),
                   ],
