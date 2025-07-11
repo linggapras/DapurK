@@ -62,8 +62,9 @@ flutter run
 
 ---
 
-## 📂 Struktur Folder Singkat
+## 📂 Struktur Folder
 
+```
 lib/
 ├── main.dart
 ├── model/
@@ -74,4 +75,6 @@ lib/
 ├── widget/
 │   ├── home_page.dart
 │   └── detail_page.dart
+```
+
 
