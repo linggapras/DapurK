@@ -13,6 +13,7 @@ class MealDetail {
     required this.ingredients,
   });
 
+  // Mengubah data JSON menjadi objek MealDetail
   factory MealDetail.fromJson(Map<String, dynamic> json) {
     List<String> ingredients = [];
 
