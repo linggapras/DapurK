@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'widget/splash_screen.dart'; // pastikan ini benar
+import 'widget/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      home: const SplashScreen(), // pastikan nama class-nya cocok
-      debugShowCheckedModeBanner: false,
+      home: const SplashScreen(), // Tampilan pertama saat aplikasi dibuka
+      debugShowCheckedModeBanner: false, // Menghilangkan label debug
     );
   }
 }
