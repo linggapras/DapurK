@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # dapur_kita
 
 DapurKita adalah aplikasi mobile berbasis Flutter yang menampilkan berbagai resep masakan dari seluruh dunia. Aplikasi ini terhubung langsung ke API publik [TheMealDB](https://www.themealdb.com/) untuk menampilkan data resep secara real-time.
