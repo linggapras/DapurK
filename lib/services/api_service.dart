@@ -1,11 +1,12 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../model/meal_model.dart';
-import '../model/meal_detail_model.dart'; // tambahkan ini
+import '../model/meal_detail_model.dart';
 
 class ApiService {
   static const String baseUrl = "https://www.themealdb.com/api/json/v1/1";
 
+  // Mengambil daftar meal berdasarkan kategori
   static Future<List<Meal>> fetchMeals(String category) async {
     final response = await http.get(Uri.parse('$baseUrl/filter.php?c=$category'));
     if (response.statusCode == 200) {
@@ -17,7 +18,7 @@ class ApiService {
     }
   }
 
-  // ⬇⬇⬇ Tambahkan method ini DI DALAM class ApiService ⬇⬇⬇
+  // Mengambil detail meal berdasarkan ID
   static Future<MealDetail> fetchMealDetail(String id) async {
     final response = await http.get(Uri.parse('$baseUrl/lookup.php?i=$id'));
 
