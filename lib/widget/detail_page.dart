@@ -15,10 +15,10 @@ class DetailPage extends StatelessWidget {
         backgroundColor: Colors.deepOrange,
       ),
       body: FutureBuilder<MealDetail>(
-        future: ApiService.fetchMealDetail(mealId),
+        future: ApiService.fetchMealDetail(mealId), // Mengambil detail resep dari API
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(child: CircularProgressIndicator());
+            return const Center(child: CircularProgressIndicator()); // Loading indicator
           } else if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));
           } else {
@@ -54,7 +54,7 @@ class DetailPage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 8),
-                  Text(meal.instructions),
+                  Text(meal.instructions), // Instruksi memasak
                   const SizedBox(height: 16),
                   const Text(
                     "Ingredients:",
@@ -64,7 +64,7 @@ class DetailPage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 8),
-                  ...meal.ingredients.map((ing) => Text('• $ing')),
+                  ...meal.ingredients.map((ing) => Text('• $ing')), // Daftar bahan
                 ],
               ),
             );
