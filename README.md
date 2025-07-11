@@ -1,33 +1,76 @@
 # 🍽️ DapurKita
 
-DapurKita adalah aplikasi mobile berbasis Flutter yang menampilkan berbagai resep masakan dari seluruh dunia. Aplikasi ini terhubung langsung ke API publik [TheMealDB](https://www.themealdb.com/) untuk menampilkan data resep secara real-time.
+**DapurKita** adalah aplikasi mobile berbasis Flutter yang menampilkan berbagai resep masakan secara real-time. Aplikasi ini menggunakan API publik [TheMealDB](https://www.themealdb.com/) untuk mengambil data.
 
 ---
 
-## 📱 Fitur Utama
+## 🎯 Fitur Aplikasi
 
-- Splash screen langsung menuju halaman utama
-- Menampilkan daftar resep berdasarkan kategori (contoh: Chicken)
-- Menampilkan detail resep:
-  - Gambar
-  - Deskripsi (instruksi memasak)
-  - Daftar bahan-bahan
-- Tampilan responsif (portrait & landscape)
-- Dekorasi dengan Material Design dan warna tema orange
-- Navigasi antar halaman menggunakan Flutter Routing
+- Tampilan splash screen otomatis masuk ke halaman utama
+- Halaman utama menampilkan daftar resep berdasarkan kategori
+- Halaman detail resep menampilkan gambar, deskripsi, dan bahan-bahan
+- Navigasi antar halaman
+- Desain responsif dengan Material Design
 
 ---
 
-## 🛠️ Teknologi
+## 🛠️ Widget yang Digunakan
 
-- **Flutter**
-- **Dart**
-- **REST API (TheMealDB)**
-- **HTTP Package**
+1. `MaterialApp` – untuk inisialisasi aplikasi
+2. `Scaffold` – sebagai kerangka layout setiap halaman
+3. `AppBar` – untuk menampilkan judul halaman
+4. `FutureBuilder` – untuk mengambil data dari API secara asynchronous
+5. `ListView.builder` – untuk menampilkan daftar resep
+6. `Card` – menampilkan setiap resep dalam bentuk kotak
+7. `Image.network` – untuk menampilkan gambar dari URL
+8. `Text` – menampilkan nama makanan dan deskripsi
+9. `ElevatedButton` – untuk tombol navigasi ke detail resep
+10. `SingleChildScrollView` – agar halaman detail bisa di-scroll
+11. `Navigator` + `MaterialPageRoute` – untuk pindah halaman
 
 ---
 
-## 🔗 API yang Digunakan
+## 🔧 Teknologi yang Digunakan
 
-Data resep diambil dari:
+- Flutter + Dart
+- HTTP Package
+- REST API (TheMealDB)
+- Android Studio
 
+---
+
+## 🌐 API yang Digunakan
+
+- List resep berdasarkan kategori:
+https://www.themealdb.com/api/json/v1/1/filter.php?c=Chicken
+
+
+- Detail resep berdasarkan ID:
+https://www.themealdb.com/api/json/v1/1/lookup.php?i=MealID
+
+
+---
+
+## 🚀 Cara Menjalankan
+
+1. Clone repo:
+git clone https://github.com/linggapras/DapurK.git
+cd DapurK
+flutter pub get
+flutter run
+
+
+---
+
+## 📂 Struktur Folder Singkat
+
+lib/
+├── main.dart
+├── model/
+│ ├── meal_model.dart
+│ └── meal_detail_model.dart
+├── services/
+│ └── api_service.dart
+├── widget/
+│ ├── home_page.dart
+│ └── detail_page.dart
