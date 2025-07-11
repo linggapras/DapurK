@@ -67,10 +67,11 @@ flutter run
 lib/
 ├── main.dart
 ├── model/
-│ ├── meal_model.dart
-│ └── meal_detail_model.dart
+│   ├── meal_model.dart
+│   └── meal_detail_model.dart
 ├── services/
-│ └── api_service.dart
+│   └── api_service.dart
 ├── widget/
-│ ├── home_page.dart
-│ └── detail_page.dart
+│   ├── home_page.dart
+│   └── detail_page.dart
+
