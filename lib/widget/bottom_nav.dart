@@ -9,8 +9,8 @@ class BottomNav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      currentIndex: selectedIndex,
-      onTap: onItemTapped,
+      currentIndex: selectedIndex, // Menunjukkan item yang sedang aktif
+      onTap: onItemTapped, // Mengatur aksi saat item ditekan
       selectedItemColor: Colors.deepOrange,
       items: const [
         BottomNavigationBarItem(
