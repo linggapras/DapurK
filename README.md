@@ -44,11 +44,6 @@
 - List resep berdasarkan kategori:
 https://www.themealdb.com/api/json/v1/1/filter.php?c=Chicken
 
-
-- Detail resep berdasarkan ID:
-https://www.themealdb.com/api/json/v1/1/lookup.php?i=MealID
-
-
 ---
 
 ## 🚀 Cara Menjalankan
