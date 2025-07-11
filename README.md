@@ -1,20 +1,33 @@
-
-# dapur_kita
+# 🍽️ DapurKita
 
 DapurKita adalah aplikasi mobile berbasis Flutter yang menampilkan berbagai resep masakan dari seluruh dunia. Aplikasi ini terhubung langsung ke API publik [TheMealDB](https://www.themealdb.com/) untuk menampilkan data resep secara real-time.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📱 Fitur Utama
 
-A few resources to get you started if this is your first Flutter project:
+- Splash screen langsung menuju halaman utama
+- Menampilkan daftar resep berdasarkan kategori (contoh: Chicken)
+- Menampilkan detail resep:
+  - Gambar
+  - Deskripsi (instruksi memasak)
+  - Daftar bahan-bahan
+- Tampilan responsif (portrait & landscape)
+- Dekorasi dengan Material Design dan warna tema orange
+- Navigasi antar halaman menggunakan Flutter Routing
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# DapurK
->>>>>>> faa4aeb14e8e62d2116b06e8f8321e1c8e9b9e29
+## 🛠️ Teknologi
+
+- **Flutter**
+- **Dart**
+- **REST API (TheMealDB)**
+- **HTTP Package**
+
+---
+
+## 🔗 API yang Digunakan
+
+Data resep diambil dari:
+
