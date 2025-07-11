@@ -54,10 +54,10 @@ https://www.themealdb.com/api/json/v1/1/lookup.php?i=MealID
 ## 🚀 Cara Menjalankan
 
 1. Clone repo:
-git clone https://github.com/linggapras/DapurK.git
-cd DapurK
-flutter pub get
-flutter run
+- git clone https://github.com/linggapras/DapurK.git
+- cd DapurK
+- flutter pub get
+- flutter run
 
 
 ---
