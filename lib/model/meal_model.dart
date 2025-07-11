@@ -9,6 +9,7 @@ class Meal {
     required this.thumbnail,
   });
 
+  // Mengubah data JSON menjadi objek Meal
   factory Meal.fromJson(Map<String, dynamic> json) {
     return Meal(
       id: json['idMeal'],
