@@ -60,21 +60,6 @@ flutter pub get
 flutter run
 
 
----
 
-## 📂 Struktur Folder
-
-```
-lib/
-├── main.dart
-├── model/
-│   ├── meal_model.dart
-│   └── meal_detail_model.dart
-├── services/
-│   └── api_service.dart
-├── widget/
-│   ├── home_page.dart
-│   └── detail_page.dart
-```
 
 
